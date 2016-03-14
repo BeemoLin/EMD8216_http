@@ -41,7 +41,7 @@ public class main {
 
 	private static void httpServer() {
 		port(8080);
-        get("/hello", (req, res) -> "Hello World");
+        get("/hello", (req, res) -> "true");
         
         // 172.18.0.33
         get("/33/:point", (request, response) -> {
